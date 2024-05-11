@@ -1,0 +1,107 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: #e3f2fd;
+}
+
+.wrapper {
+}
+.wrapper__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.wrapper__body {
+	width: 380px;
+	margin: 150px auto;
+}
+
+.select-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	height: 50px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+.select-menu__text {
+	font-size: 20px;
+	font-weight: 600;
+}
+.select-menu__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+}
+
+.select-menu__button.active {
+	transform: rotate(180deg);
+}
+
+.fa-chevron-down {
+	font-size: 20px;
+}
+.options {
+	position: relative;
+	padding: 20px;
+	border-radius: 8px;
+	background-color: white;
+	transition: all 0.3s ease;
+	display: none;
+}
+
+.options:not(:first-child) {
+	margin-top: 15px;
+}
+
+.options.active {
+	display: block;
+}
+
+.options__item {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	height: 40px;
+	padding-left: 10px;
+}
+
+.options__item:hover {
+	background-color: #f5f5f5;
+	border-radius: 8px;
+}
+
+.options__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.options__icon {
+}
+.fa-brands {
+	font-size: 26px;
+}
+.options__text {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.fa-instagram {
+	color: #e1306c;
+}
+
+.fa-linkedin {
+	color: #0e76a8;
+}
+
+.fa-facebook {
+	color: #4267b2;
+}
+
+.fa-twitter {
+	color: #1da1f2;
+}
